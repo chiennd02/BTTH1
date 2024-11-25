@@ -27,12 +27,21 @@ $questionsArray = explode("---", $questions);
             $questionText = array_shift($lines);
             
             // Hiển thị câu hỏi
-            echo "<p><strong>" . ($index + 1) . ". " . $questionText . "</strong></p>";
+            echo "<p><strong>" . ($index + 1) . ". " . htmlspecialchars($questionText) . "</strong></p>";
 
             // Hiển thị các lựa chọn (A, B, C, D)
             foreach ($lines as $line) {
-                if (trim($line)) {
-                    echo "<input type='radio' name='question-$index' value='" . trim($line) . "'> " . trim($line) . "<br>";
+                if (strpos($line, 'Answer:') === false && trim($line)) {
+                    $value = trim($line);
+                    echo "<input type='radio' name='question-$index' value='" . htmlspecialchars($value) . "'> " . htmlspecialchars($value) . "<br>";
+                }
+            }
+
+            // Lưu đáp án đúng vào một input ẩn
+            foreach ($lines as $line) {
+                if (strpos($line, 'Answer:') === 0) {
+                    $correctAnswer = str_replace('Answer: ', '', trim($line));
+                    echo "<input type='hidden' name='answer-$index' value='" . htmlspecialchars($correctAnswer) . "'>";
                 }
             }
         }
