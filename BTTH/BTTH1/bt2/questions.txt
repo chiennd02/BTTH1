@@ -1,0 +1,35 @@
+Câu hỏi 1: Đây là câu hỏi 1?
+A. Lựa chọn A
+B. Lựa chọn B
+C. Lựa chọn C
+D. Lựa chọn D
+Answer: A
+---
+Câu hỏi 2: Đây là câu hỏi 2?
+A. Lựa chọn A
+B. Lựa chọn B
+C. Lựa chọn C
+D. Lựa chọn D
+Answer: B
+---
+Câu hỏi 3: Đây là câu hỏi 2?
+A. Lựa chọn A
+B. Lựa chọn B
+C. Lựa chọn C
+D. Lựa chọn D
+Answer: B
+---
+Câu hỏi 4: Đây là câu hỏi 2?
+A. Lựa chọn A
+B. Lựa chọn B
+C. Lựa chọn C
+D. Lựa chọn D
+Answer: A
+---
+Câu hỏi 5: Đây là câu hỏi 2?
+A. Lựa chọn A
+B. Lựa chọn B
+C. Lựa chọn C
+D. Lựa chọn D
+Answer: C
+---
