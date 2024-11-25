@@ -1,6 +1,6 @@
 <?php
 // Đọc tệp CSV
-$filename = "customers.csv";
+$filename = "KTPM2.csv";
 $customers = [];
 
 // Mở tệp CSV và đọc nội dung
@@ -56,7 +56,8 @@ if (($handle = fopen($filename, "r")) !== false) {
             foreach ($customers as $customer) {
                 echo "<tr>";
                 foreach ($customer as $value) {
-                    echo "<td>" . htmlspecialchars($value) . "</td>";
+                    // Kiểm tra nếu giá trị trống thì thay thế bằng một chuỗi "N/A"
+                    echo "<td>" . (empty($value) ? "N/A" : htmlspecialchars($value)) . "</td>";
                 }
                 echo "</tr>";
             }
